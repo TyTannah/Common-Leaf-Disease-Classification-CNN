@@ -1,24 +1,8 @@
 # Common-Leaf-Disease-Classification-CNN
 A CNN model training script for classification of common leaf disease images that are found on common crop plants. Trained on the https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset image dataset
-The .ipynb is the full training script, the .pth is the weighted state of the model, which can be loaded. 
+The .ipynb is the full script used for training. 
 
 Run Instructions -
-
-For using built model weights:
-
-1. Ensure pytorch, torchvision, etc. are installed
-
-2. Create a model class in a python script to load the model file (leaf_disease_model.pth) into.
-   * you can copy the model class (LeafCNN) from the LeafClassificationCNN.ipynb file in cell 6
-
-3. Use torch.load() to read the .pth file:
- 
-* EG: 	model = torch.load('entire_model.pth')
- 	state_dict = torch.load('leaf_disease_model.pth", weights_only=True)
-	model.load_state_dict(state_dict)
-	model.eval()
-
-For Using Training script and creating new model:
 
 1. Open notebook file ide of choice (eg jupyter notebook/lab)
 
